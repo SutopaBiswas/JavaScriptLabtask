@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<tile><h2>JavaScript</h2></tltle>
+</head>
+<body>
+	<form>
+	Blood Group: 
+		<select id="bg" name="bg" >
+			<option value="A+">A+</option>
+			<option value="A">A</option>
+			<option value="A-">A-</option>
+			<option value="B+">B+</option>
+			<option value="B-">B-</option>
+			<option value="AB+">AB+</option>
+			<option value="AB-">AB-</option>
+			<option value="O+">O+</option>
+			<option value="O-">O-</option>
+		</select>
+		<p id="msg"></p>
+		<input type="submit" name="submit" value="Submit" onclick="f1()">
+		
+	
+	</form>
+	
+	<script>
+	    "use strict"
+		
+		function f1()
+		{
+			var bg = document.getElementById("bg").value;
+			
+			if(bg == ""){
+				document.getElementById('msg').innerHTML = "null submission";
+			}else{
+				document.getElementById('msg').innerHTML = "Ok";
+			}
+			
+			document.getElementById('msg').innerHTML = bg;
+			
+		}
+	</script>
+</body>
+</html>
