@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<tile><h2>JavaScript</h2></tltle>
+</head>
+<body>
+	<form>
+	<table>
+		<tr>
+		<td>Name: </br></td>
+		<td><input id="name" type="text" name="" value=""></td><p id="msg"></p>
+		</tr>
+		<tr>
+		<td colspan="2"><input type="submit" name="submit" value="Submit" onclick="f1()"></td>
+		</tr>
+	</table>	
+	</form>
+	
+	<script>
+	    "use strict"
+		
+		function f1()
+		{
+			var name = document.getElementById('name').value;
+			
+			if(name == " "){
+				document.getElementById('msg').innerHTML = "null submission";
+			}else{
+				document.getElementById('msg').innerHTML = "Ok";
+			}
+			
+			document.getElementById('msg').innerHTML = name;
+			
+			
+			
+		}
+	</script>
+</body>
+</html>
