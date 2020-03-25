@@ -8,7 +8,9 @@
 	<table>
 		<tr>
 		<td>Email: </br></td>
-		<td><input id="email" type="text" name="email" value=""></td><p id="msg"></p>
+		</tr>
+		<tr>
+		<td><input id="email" type="text" name="email" value=""><p id="msg"></p></td>
 		</tr>
 		<tr>
 		<td colspan="2"><input type="submit" name="submit" value="Submit" onclick="f1()"></td>
@@ -21,15 +23,15 @@
 		
 		function f1()
 		{
-			var name = document.getElementById("email").value;
+			var email = document.getElementById("email").value;
 			
-			if(name == ""){
+			if(email == ""){
 				document.getElementById('msg').innerHTML = "null submission";
 			}else{
 				document.getElementById('msg').innerHTML = "Ok";
 			}
 			
-			document.getElementById('msg').innerHTML = name;
+			document.getElementById('msg').innerHTML = email;
 			
 			
 			
