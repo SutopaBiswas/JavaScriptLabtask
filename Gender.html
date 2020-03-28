@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<tile><h2>JavaScript</h2></tltle>
+</head>
+<body>
+	<form>
+		<table>
+		<tr>
+		<td>Gender:</td>
+        </tr>
+		<tr>
+		<td><input id="gen" type="radio" name="gen" value="">Male
+			<input id="gen" type="radio" name="gen" value="">Female
+			<input id="gen" type="radio" name="gen" value="">Other
+		</td><p id="msg"></p>
+		</tr>
+		<tr>
+		<td><input type="submit" name="submit" value="Submit" onclick="f1()"></td>
+		</tr>
+		
+	</table>
+	</form>
+	
+	<script>
+	    "use strict"
+		
+		function f1()
+		{
+			var gen = document.getElementById("gen").value;
+			
+			if(gen == ""){
+				document.getElementById('msg').innerHTML = "null submission";
+			}else{
+				document.getElementById('msg').innerHTML = "Ok";
+			}
+			
+			document.getElementById('msg').innerHTML = gen;
+			
+		}
+	</script>
+</body>
+</html>

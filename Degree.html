@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<tile><h2>JavaScript</h2></tltle>
+</head>
+<body>
+	<form>
+		<table>
+		<tr>
+		<td>Degree:</td>
+        </tr>
+		<tr>
+		<td><input id="deg" type="checkbox" name="deg" value="">SSC
+			<input id="deg" type="checkbox" name="deg" value="">HSC
+			<input id="deg" type="checkbox" name="deg" value="">BSC
+		</td><p id="msg"></p>
+		</tr>
+		<tr>
+		<td><input type="submit" name="submit" value="Submit" onclick="f1()"></td>
+		</tr>
+		
+	</table>
+	</form>
+	
+	<script>
+	    "use strict"
+		
+		function f1()
+		{
+			var deg = document.getElementById("deg").value;
+			
+			if(deg == ""){
+				document.getElementById('msg').innerHTML = "null submission";
+			}else{
+				document.getElementById('msg').innerHTML = "Ok";
+			}
+			
+			document.getElementById('msg').innerHTML = deg;
+			
+		}
+	</script>
+</body>
+</html>
